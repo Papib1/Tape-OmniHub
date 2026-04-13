@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OmniHub | Smartphones & Streaming</title>
+    <title>OmniHub | Smartphones & Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .premium-gold { background: linear-gradient(90deg, #D4AF37, #F9E29C); }
-        .dark-card { background-color: #1a1a1a; color: white; }
     </style>
 </head>
 <body class="bg-gray-100 font-sans text-gray-900">
@@ -17,102 +16,49 @@
             <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center font-bold text-black">O</div>
             <h1 class="text-xl font-bold tracking-tighter">OMNIHUB</h1>
         </div>
-        <div id="user-status" class="text-[10px] bg-yellow-600 px-2 py-1 rounded-full uppercase font-bold">Visiteur</div>
+        <div class="text-[10px] bg-yellow-600 px-2 py-1 rounded-full uppercase font-bold">Visiteur</div>
     </nav>
 
     <header class="premium-gold p-6 text-center shadow-inner">
-        <h2 class="text-xl font-black text-black">OFFRE PREMIUM OMNI</h2>
-        <p class="text-xs text-black font-semibold mb-3">Livraison 0 FCFA + Streaming Illimité</p>
-        <button onclick="openPayment('Abonnement Premium', 5000)" class="bg-black text-white px-8 py-2 rounded-full font-bold text-sm shadow-lg active:scale-95 transition">ACTIVER (5.000 FCFA)</button>
+        <h2 class="text-xl font-black text-black">ESPACE OMNI PREMIUM</h2>
+        <p class="text-xs text-black font-semibold mb-3">Accès Prioritaire & Livraison Gratuite</p>
+        <button onclick="openPayment('Abonnement Premium', 5000)" class="bg-black text-white px-8 py-2 rounded-full font-bold text-sm shadow-lg">ACTIVER (5.000 FCFA)</button>
     </header>
 
-    <main class="p-4 space-y-8">
+    <main class="p-4 space-y-6">
         <section>
-            <h3 class="text-lg font-bold mb-4 flex items-center gap-2">📱 Smartphones <span class="text-[10px] bg-red-500 text-white px-2 rounded">New</span></h3>
-            <div class="grid grid-cols-1 gap-4">
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-200">
-                    <span class="text-[10px] font-bold text-gray-400 uppercase">Apple</span>
-                    <h4 class="text-lg font-bold">iPhone 15 Pro Max</h4>
-                    <p class="text-blue-600 font-black text-xl">850.000 FCFA</p>
-                    <p class="text-[11px] text-green-600 mb-4" id="ship-1">Livraison : 2.500 FCFA</p>
-                    <button onclick="openPayment('iPhone 15 Pro Max', 850000)" class="w-full bg-black text-white py-3 rounded-xl font-bold">Commander</button>
-                </div>
-
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-200">
-                    <span class="text-[10px] font-bold text-gray-400 uppercase">Samsung</span>
-                    <h4 class="text-lg font-bold">Galaxy S24 Ultra</h4>
-                    <p class="text-blue-600 font-black text-xl">750.000 FCFA</p>
-                    <p class="text-[11px] text-green-600 mb-4" id="ship-2">Livraison : 2.500 FCFA</p>
-                    <button onclick="openPayment('Galaxy S24 Ultra', 750000)" class="w-full bg-black text-white py-3 rounded-xl font-bold">Commander</button>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h3 class="text-lg font-bold mb-4">🎧 Accessoires</h3>
-            <div class="flex gap-4 overflow-x-auto pb-2">
-                <div class="min-w-[140px] bg-white p-3 rounded-xl border text-center shadow-sm">
-                    <p class="font-bold text-sm">AirPods Pro 2</p>
-                    <p class="text-blue-600 text-xs font-bold mb-2">150.000 F</p>
-                    <button onclick="openPayment('AirPods Pro', 150000)" class="text-[10px] bg-gray-100 px-3 py-1 rounded-full border">Acheter</button>
-                </div>
-                <div class="min-w-[140px] bg-white p-3 rounded-xl border text-center shadow-sm">
-                    <p class="font-bold text-sm">Chargeur 45W</p>
-                    <p class="text-blue-600 text-xs font-bold mb-2">25.000 F</p>
-                    <button onclick="openPayment('Chargeur 45W', 25000)" class="text-[10px] bg-gray-100 px-3 py-1 rounded-full border">Acheter</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-black -mx-4 p-6 rounded-t-3xl">
-            <h3 class="text-white text-lg font-bold mb-4 flex items-center gap-2">🎬 OmniHub Video <span class="text-[10px] text-yellow-500 font-normal">Premium</span></h3>
-            <div class="grid grid-cols-2 gap-3">
-                <div class="relative bg-gray-800 aspect-video rounded-lg flex items-center justify-center overflow-hidden">
-                    <span class="text-white text-[10px] z-10 lock-icon">🔒 Premium</span>
-                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400" class="absolute inset-0 object-cover opacity-40">
-                </div>
-                <div class="relative bg-gray-800 aspect-video rounded-lg flex items-center justify-center overflow-hidden">
-                    <span class="text-white text-[10px] z-10 lock-icon">🔒 Premium</span>
-                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400" class="absolute inset-0 object-cover opacity-40">
-                </div>
+            <h3 class="text-lg font-bold mb-4 text-black">📱 Smartphones & High-Tech</h3>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-200">
+                <h4 class="text-lg font-bold">iPhone 15 Pro Max</h4>
+                <p class="text-blue-600 font-black text-xl">850.000 FCFA</p>
+                <button onclick="openPayment('iPhone 15 Pro Max', 850000)" class="w-full mt-3 bg-black text-white py-3 rounded-xl font-bold">Commander</button>
             </div>
         </section>
     </main>
 
     <div id="pay-modal" class="fixed inset-0 bg-black/80 hidden z-[100] p-6 flex items-center justify-center">
         <div class="bg-white w-full max-w-sm rounded-3xl p-6 text-center">
-            <h3 id="pay-title" class="text-xl font-bold mb-2">Paiement</h3>
+            <h3 id="pay-title" class="text-xl font-bold mb-2">Choisir le mode de paiement</h3>
             <p id="pay-amount" class="text-2xl font-black text-blue-600 mb-6">0 FCFA</p>
-            
-            <p class="text-xs text-gray-500 mb-4 uppercase font-bold tracking-widest">Choisissez votre mode de paiement</p>
-            
-            <div class="grid grid-cols-2 gap-4 mb-6">
-                <button onclick="showFinalStep('WAVE')" class="p-4 border-2 border-blue-500 rounded-2xl flex flex-col items-center gap-2">
-                    <span class="text-blue-600 font-bold">WAVE</span>
-                </button>
-                <button onclick="showFinalStep('ORANGE')" class="p-4 border-2 border-orange-500 rounded-2xl flex flex-col items-center gap-2">
-                    <span class="text-orange-600 font-bold">ORANGE</span>
-                </button>
+            <div class="grid grid-cols-1 gap-3 mb-6">
+                <button onclick="showFinalStep('WAVE')" class="p-4 border-2 border-blue-500 rounded-xl text-blue-600 font-bold">Payer par WAVE</button>
+                <button onclick="showFinalStep('ORANGE')" class="p-4 border-2 border-orange-500 rounded-xl text-orange-600 font-bold">Payer par ORANGE MONEY</button>
+                <button onclick="showFinalStep('CARD')" class="p-4 border-2 border-gray-800 rounded-xl text-gray-800 font-bold">💳 Carte Visa / MasterCard</button>
             </div>
-            
-            <button onclick="closeModal()" class="text-gray-400 text-sm font-bold">Annuler</button>
+            <button onclick="closeModal()" class="text-gray-400 text-sm">Annuler</button>
         </div>
     </div>
 
     <div id="final-step" class="fixed inset-0 bg-white hidden z-[110] p-6 text-center flex flex-col items-center justify-center">
         <h3 class="text-xl font-bold mb-4">Scannez pour payer</h3>
-        <p class="text-sm text-gray-600 mb-6 italic">Prenez une capture d'écran et scannez-la dans votre application.</p>
-        
-        <div id="qr-container" class="w-64 h-64 bg-gray-100 rounded-2xl mb-8 flex items-center justify-center border-4 border-black overflow-hidden">
-            <p class="p-4 text-xs font-bold text-red-500">IMAGE QR ICI</p>
-        </div>
-
-        <button onclick="finishProcess()" class="bg-green-600 text-white w-full py-4 rounded-2xl font-black shadow-xl">J'AI ENVOYÉ LE PAIEMENT ✅</button>
+        <div id="qr-display" class="w-72 h-72 bg-gray-100 rounded-2xl mb-8 flex items-center justify-center border-4 border-black overflow-hidden shadow-2xl">
+            </div>
+        <p class="text-sm text-gray-500 mb-6 px-4 italic">Une fois le paiement fait, envoyez la capture d'écran sur WhatsApp.</p>
+        <button onclick="finishProcess()" class="bg-green-600 text-white w-full py-4 rounded-2xl font-black shadow-xl">J'AI EFFECTUÉ LE PAIEMENT ✅</button>
     </div>
 
     <script>
         let currentAmount = 0;
-        let isPremium = false;
 
         function openPayment(title, price) {
             currentAmount = price;
@@ -121,42 +67,26 @@
             document.getElementById('pay-modal').classList.remove('hidden');
         }
 
-        function closeModal() {
-            document.getElementById('pay-modal').classList.add('hidden');
-        }
+        function closeModal() { document.getElementById('pay-modal').classList.add('hidden'); }
 
         function showFinalStep(provider) {
             document.getElementById('pay-modal').classList.add('hidden');
             document.getElementById('final-step').classList.remove('hidden');
+            const display = document.getElementById('qr-display');
             
-            const qrBox = document.getElementById('qr-container');
+            // Liens directs vers tes fichiers GitHub
             if(provider === 'WAVE') {
-                qrBox.innerHTML = '<img src="URL_IMAGE_WAVE_ICI" class="w-full h-full object-contain">'; 
-                // Remplace URL_IMAGE_WAVE_ICI par le lien de ton image Wave après l'avoir uploadée sur Replit
+                display.innerHTML = '<img src="https://raw.githubusercontent.com/Papib1/Tape-OmniHub/principal/1000300978.jpg" class="w-full h-full object-contain">';
+            } else if(provider === 'ORANGE') {
+                display.innerHTML = '<img src="https://raw.githubusercontent.com/Papib1/Tape-OmniHub/principal/1000300998.jpg" class="w-full h-full object-contain">';
             } else {
-                qrBox.innerHTML = '<img src="URL_IMAGE_ORANGE_ICI" class="w-full h-full object-contain">';
-                // Remplace URL_IMAGE_ORANGE_ICI par le lien de ton image Orange après l'avoir uploadée sur Replit
+                display.innerHTML = '<div class="p-4"><p class="font-bold">Contactez-nous sur WhatsApp pour le lien de paiement Carte Bancaire (Visa/MasterCard).</p></div>';
             }
         }
 
         function finishProcess() {
-            alert("Merci ! Votre transaction est en cours de vérification. Envoyez votre capture d'écran sur notre WhatsApp pour accélérer l'activation.");
-            if(currentAmount === 5000) {
-                isPremium = true;
-                applyPremium();
-            }
-            document.getElementById('final-step').classList.add('hidden');
-        }
-
-        function applyPremium() {
-            document.getElementById('user-status').innerText = "PREMIUM ✅";
-            document.getElementById('user-status').className = "text-[10px] bg-green-500 px-2 py-1 rounded-full uppercase font-bold text-white";
-            document.getElementById('ship-1').innerText = "Livraison : GRATUITE ✨";
-            document.getElementById('ship-2').innerText = "Livraison : GRATUITE ✨";
-            const locks = document.querySelectorAll('.lock-icon');
-            locks.forEach(l => l.innerText = "▶️ Regarder");
+            window.location.href = "https://wa.me/TON_NUMERO_ICI"; // Remplace par ton numéro WhatsApp
         }
     </script>
 </body>
 </html>
-
